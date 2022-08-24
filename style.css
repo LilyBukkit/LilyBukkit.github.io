@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+div#container{
+    background: linear-gradient(to top, greenyellow 74%, green 100%) top left repeat-x;
+}
+
+#header {
+    background-image: url('/images/LilyBukkit.png');
+    background-position: 1ch 1ch;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    height: 7ch;
+    position: relative;
+    z-index: 10;
+}
+
+#header h1{
+    background: transparent;
+    float: left;
+    font-size: large;
+    margin-left: 5ch;
+    padding: 0;
+}
+
+#header h1 a{
+    background: transparent;
+    color: whitesmoke;
+    display: block;
+    float: left;
+    font-family: 'MinecraftiaRegular';
+    font-style: normal;
+    font-size: 160%;
+    letter-spacing: .9px;
+    margin-left: 1ch;
+    text-decoration: none;
+    text-shadow: 5px 3px 5px rgb(0, 0, 0);
+}
+
+#content {
+    background-color: whitesmoke;
+    height: inherit;
+    margin-top: 4ch;
+    padding-left: 2ch;
+    padding-right: 2ch;
+    position: relative;
+}
