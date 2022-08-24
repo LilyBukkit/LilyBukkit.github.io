@@ -4,14 +4,15 @@ div#container{
     background: linear-gradient(to top, greenyellow 74%, green 100%) top left repeat-x;
 }
 
+/* Header stuff */
 #header {
     background-image: url('/images/LilyBukkit.png');
     background-position: 1ch 1ch;
     background-repeat: no-repeat;
     background-size: 50px 50px;
     height: 7ch;
+    padding-bottom: 2ch;
     position: relative;
-    z-index: 10;
 }
 
 #header h1{
@@ -36,11 +37,42 @@ div#container{
     text-shadow: 5px 3px 5px rgb(0, 0, 0);
 }
 
+/* Main page contents */
 #content {
     background-color: whitesmoke;
     height: inherit;
-    margin-top: 4ch;
+    margin-top: 5ch;
     padding-left: 2ch;
     padding-right: 2ch;
     position: relative;
+}
+
+/* Menu */
+div#top-menu {
+    background-color: rgb(0,80,0);
+    height: 3ch;
+    margin-top: 2ch;
+    position: absolute;
+    width: 100%;
+}
+
+#top-menu ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+#top-menu ul li {
+    border-left: 1px white solid;
+    float: left;
+    width: auto;
+}
+
+#top-menu ul li a {
+    color: whitesmoke;
+    display: inline-block;
+    padding: 5% 1ch;
+    text-align: center;
+    text-decoration: none;
 }
