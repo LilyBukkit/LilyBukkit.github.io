@@ -49,7 +49,7 @@ div#container{
 }
 
 /* Main page contents */
-#content {
+main {
     background-color: whitesmoke;
     height: inherit;
     margin-top: 2em;
@@ -59,44 +59,26 @@ div#container{
 }
 
 /* Menu */
-div#top-menu {
+nav {
     background: linear-gradient(to top,rgb(92, 69, 7) 0%,rgb(58, 39, 4) 100%);
+    color: whitesmoke;
     height: 4%;
     margin-top: 0;
     position: absolute;
     width: 99%;
 }
 
-#top-menu ul {
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-}
-
-#top-menu ul li {
-    align-content: center;
-    border-left: 1px white solid;
-    display: flex;
-    flex-direction: column;
-    float: left;
-    font-family: 'MinecraftiaRegular';
-    font-style: normal;
-    font-size: 78%;
-    height: 100%;
-    justify-content: center;
-}
-
-#top-menu ul li a {
+nav a {
+    border-left: 1px solid white;
     color: whitesmoke;
     display: inline-block;
     height: 100%;
-    padding: 5% 1ch;
+    padding: 1ch;
     text-align: center;
     text-decoration: none;
 }
 
-#top-menu ul li a:hover {
+nav a:hover {
     background: linear-gradient(to top,rgb(92, 60, 0) 0%,rgb(58, 35, 0) 100%);
     height: 100%;
 }
