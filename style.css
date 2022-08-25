@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+body {
+    background-color: whitesmoke;
+}
+
 div {
     margin: 0;
     padding: 0;
