@@ -1,7 +1,13 @@
 @charset "utf-8";
 
+div {
+    margin: 0;
+    padding: 0;
+}
+
 div#container{
     background: linear-gradient(to top, greenyellow 74%, green 100%) top left repeat-x;
+    /*background-image: url('https://raw.githubusercontent.com/exalpha-dev/exalpha-dev.github.io/main/dirt.png');*/
 }
 
 /* Header stuff */
@@ -13,6 +19,7 @@ div#container{
     height: 7ch;
     padding-bottom: 2ch;
     position: relative;
+    width: 100%;
 }
 
 #header h1{
@@ -41,7 +48,7 @@ div#container{
 #content {
     background-color: whitesmoke;
     height: inherit;
-    margin-top: 5ch;
+    margin-top: 2em;
     padding-left: 2ch;
     padding-right: 2ch;
     position: relative;
@@ -49,11 +56,14 @@ div#container{
 
 /* Menu */
 div#top-menu {
-    background-color: rgb(0,80,0);
-    height: 3ch;
-    margin-top: 2ch;
+    /*background: linear-gradient(to bottom, #291b0f 33%, #1a1008 50%, #291b0f 99%);*/
+    /*background-image: url('https://raw.githubusercontent.com/exalpha-dev/exalpha-dev.github.io/main/dirt2.png');
+    background-repeat: repeat-x;*/
+    background: linear-gradient(to top,rgb(92, 69, 7) 0%,rgb(58, 39, 4) 100%);
+    height: 4%;
+    margin-top: 0;
     position: absolute;
-    width: 100%;
+    width: 98%;
 }
 
 #top-menu ul {
@@ -64,15 +74,30 @@ div#top-menu {
 }
 
 #top-menu ul li {
+    align-content: center;
     border-left: 1px white solid;
+    display: flex;
+    flex-direction: column;
     float: left;
-    width: auto;
+    font-family: 'MinecraftiaRegular';
+    font-style: normal;
+    font-size: 78%;
+    height: 100%;
+    justify-content: center;
 }
 
 #top-menu ul li a {
     color: whitesmoke;
     display: inline-block;
+    height: 100%;
     padding: 5% 1ch;
     text-align: center;
     text-decoration: none;
+}
+
+#top-menu ul li a:hover {
+    /*background: linear-gradient(to bottom, #1a1008 25%, #291b0f 50%, #1a1008 75%);*/
+    /*background-color: rgba(255, 255, 255, 0.2);*/
+    background: linear-gradient(to top,rgb(92, 60, 0) 0%,rgb(58, 35, 0) 100%);
+    height: 100%;
 }
