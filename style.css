@@ -1,3 +1,4 @@
+@import url('https://scpfoundation.net/-/static/fonts/font-bauhaus.css');
 @charset "utf-8";
 
 body {
@@ -7,6 +8,11 @@ body {
 div {
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'MinecraftiaRegular';
+    font-style: normal;
 }
 
 div#container{
@@ -39,8 +45,6 @@ div#container{
     color: whitesmoke;
     display: block;
     float: left;
-    font-family: 'MinecraftiaRegular';
-    font-style: normal;
     font-size: 160%;
     letter-spacing: .9px;
     margin-left: 1ch;
@@ -52,6 +56,7 @@ div#container{
 main {
     background-color: whitesmoke;
     height: inherit;
+    font-family:'Lucida Console', 'Consolas', monospace, BauhausLTDemi;
     margin-top: 2em;
     padding-left: 2ch;
     padding-right: 2ch;
