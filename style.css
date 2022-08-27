@@ -1,13 +1,7 @@
-@import url('https://scpfoundation.net/-/static/fonts/font-bauhaus.css');
 @charset "utf-8";
 
 body {
     background-color: whitesmoke;
-}
-
-div {
-    margin: 0;
-    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 div#container{
-    background-image: url('https://raw.githubusercontent.com/exalpha-dev/exalpha-dev.github.io/main/dirt.png');
+    background-image: url('/images/dirt.png');
     background-repeat: repeat;
 }
 
@@ -52,19 +46,78 @@ div#container{
     text-shadow: 5px 3px 5px rgb(0, 0, 0);
 }
 
-/* Main page contents */
+/* Page contents */
 main {
     background-color: whitesmoke;
     height: inherit;
-    font-family:'Lucida Console', 'Consolas', monospace, BauhausLTDemi;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 2em;
-    padding-left: 2ch;
-    padding-right: 2ch;
     position: relative;
 }
 
+main>section {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+main code,
+main pre {
+    background-color: rgb(233, 233, 233);
+    font-size: medium;
+}
+
+.anim {
+    animation-duration: 2s;
+    animation-name: slidedown;
+    -moz-animation-name: slidedown;
+    -o-animation-name: slidedown;
+    -webkit-animation-name: slidedown;
+
+    transform-origin: top left;
+}
+
+@keyframes slidedown {
+    from {
+        transform: scaleY(0);
+    }
+  
+    to {
+        transform: scaleY(1);
+    }
+}
+
+@-moz-keyframes slidedown {
+    from {
+        height: 0%;
+    }
+  
+    to {
+        height: auto;
+    }
+}
+
+@-o-keyframes slidedown {
+    from {
+        height: 0%;
+    }
+  
+    to {
+        height: auto;
+    }
+}
+
+@-webkit-keyframes slidedown {
+    from {
+        height: 0%;
+    }
+  
+    to {
+        height: auto;
+    }
+}
+
 /* Menu */
-nav {
+nav#topbar {
     background: linear-gradient(to top,rgb(92, 69, 7) 0%,rgb(58, 39, 4) 100%);
     color: whitesmoke;
     height: 4%;
@@ -73,7 +126,7 @@ nav {
     width: 99%;
 }
 
-nav a {
+nav#topbar>a {
     border-left: 1px solid white;
     color: whitesmoke;
     display: inline-block;
@@ -86,9 +139,45 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+nav#topbar>a:hover {
     background: linear-gradient(to top,rgb(92, 60, 0) 0%,rgb(58, 35, 0) 100%);
     height: 100%;
+}
+
+/* Features stuff */
+.feature-box {
+    background-color: rgb(233, 233, 233);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 110px;
+    border: none double;
+    border-radius: 10%;
+    display: inline-table;
+    height: 28em;
+    margin-top: 1em;
+    padding: 1em;
+    width: 22em;
+}
+
+.feature-box h3 {
+    text-align: center;
+}
+
+.feature-box div {
+    margin-top: 8em;
+}
+
+.feature-box#optimization {
+    background-image: url('/images/LilyBukkit.png');
+}
+
+.feature-box#bukkit {
+    background-image: url('/images/Bukkit.png');
+    background-position-y: 1ch;
+}
+
+.feature-box#rml {
+    background-image: url('/images/Rosepad.png');
 }
 
 /* Plugins page */
@@ -111,4 +200,45 @@ nav a:hover {
 
 .plugin-box>a {
     color: rgb(179, 107, 0);
+}
+
+/* Docs page */
+nav#sidebar {
+    background-color: rgb(233, 233, 233);
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    margin: 0;
+    overflow-y: auto;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    width: 18em;
+}
+
+nav#sidebar>details {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+nav#sidebar details a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#sidebar>details>summary:hover,
+nav#sidebar>details>ol>li:hover,
+nav#sidebar>details>ol>li a:hover {
+    color: green;
+    cursor: pointer;
+}
+
+article {
+    background: transparent;
+    display: block;
+    margin-left: 1em;
+    padding: 1em;
+}
+
+article h1 {
+    font-family: 'Courier New', Courier, monospace;
 }

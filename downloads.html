@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/images/favicon/site.webmanifest">
+        <!--End of Favicons-->
+        <!--Fonts-->
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css"/>
+        <!--End of Fonts-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>LilyBukkit - Downloads</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <h1>
+                    <a href="/">LilyBukkit</a>
+                </h1>
+            </div>
+            <nav id="topbar">
+                <a href="/">Main</a>
+                <a href="https://github.com/LilyBukkit/LilyBukkit-Core/discussions">Forum</a>
+                <a href="/downloads.html">Downloads</a>
+                <a href="/plugins.html">Plugins</a>
+                <a href="/docs.html">API Documentation</a>
+            </nav>
+            <main>
+                <section id="lb-core">
+                    <h1>LilyBukkit-Core</h1>
+                    <div>
+                        <b>LilyBukkit-Core</b> is the server software that implements the LilyBukkit API.
+                    </div>
+                    <h3>Download</h3>
+                    <div>
+                        Latest release: 
+                        <a href="https://github.com/LilyBukkit/LilyBukkit-Core/releases/download/v1.2.1.0/LilyBukkit-a1.2.1.0.jar">Alpha 1.2.1.0</a>, 
+                        <a href="https://github.com/LilyBukkit/LilyBukkit-Core/discussions/38">Changelog</a>
+                    </div>
+                    <details onclick="document.getElementById('lbcore').className = 'anim'" style="cursor:pointer">
+                        <summary>Older versions</summary>
+                        <ul id="lbcore">
+                            <li><a href="https://github.com/LilyBukkit/LilyBukkit-Core/releases/download/v1.2.0.0/LilyBukkit-a1.2.0.0.jar">Alpha 1.2.0.0</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-Core/discussions/34">Changelog</a></li>
+                            <li><a href="https://github.com/LilyBukkit/LilyBukkit-Core/releases/download/v1.1.0.1/LilyBukkit-a1.1.0.1.jar">Alpha 1.1.0.1</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-Core/discussions/17">Changelog</a></li>
+                            <li><a href="https://github.com/LilyBukkit/LilyBukkit-Core/releases/download/v1.1.0.0/LilyBukkit-a1.1.0.0.jar">Alpha 1.1.0.0</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-Core/discussions/12">Changelog</a></li>
+                            <li><a href="https://github.com/LilyBukkit/LilyBukkit-Core/releases/download/v1.0.0.0/LilyBukkit-a1.0.0.0.jar">Alpha 1.0.0.0</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-Core/discussions/3">Changelog</a></li>
+                        </ul>
+                    </details>
+                    <h3>Installing</h3>
+                    <div>
+                        <ol>
+                            <li>Create a separate folder and put the JAR in it.</li>
+                            <li><i>(optional)</i> Create a startup script, <code>start.bat</code> (<code>start.sh</code>, if you're on Linux). Put the following command in it: <code>java -Xms1G -Xmx1G -jar LilyBukkit-aX.X.X.X.jar --nogui</code>, where <i>X.X.X.X</i> is the release you're using</li>
+                            <ol>
+                                <li><code>Xms1G</code> - this parameter controls the minimum amount of RAM, which would be allocated to your server. Change the <code>G</code> to <code>M</code>, if you want to specify the size in Megabytes.</li>
+                                <li><code>Xmx1G</code> - this parameter controls the maximum amount of RAM, that could be allocated to your server. Change the <code>G</code> to <code>M</code>, if you want to specify the size in Megabytes.</li>
+                                <li><code>nogui</code> - this parameter disables the GUI frontend of the server. If you want to use that, simply delete this parameter.</li>
+                            </ol>
+                            <li>If you didn't create a startup script, open the command line (or the terminal in Linux) in the created folder and use the same command to start the server.</li>
+                            <li>After the server outputted <code>[INFO] Done! For help, type "help" or "?"</code>,  close the server using the command <code>stop</code></li>
+                            <li>Go to <code>server.properties</code> and configure the server for your needs. See <a href="https://alphaver.fandom.com/wiki/Hosting a server#Server.properties">this wiki page on server.properties</a> for more info.</li>
+                            <li>After editing <code>server.properties</code>, go to <code>config</code> folder and edit <code>lilybukkit.yml</code> if you want to make some additional changes.</li>
+                            <li>Now you can install Bukkit plugins, but be warned that they might not work flawlessly as the API was changed quite a bit.</li>
+                        </ol>
+                    </div>
+                </section>
+                <section id="lb-api">
+                    <h1>LilyBukkit-API</h1>
+                    <div>
+                        <b>LilyBukkit-API</b> is a fork of Bukkit API for AlphaVer Minecraft versions.
+                    </div>
+                    <h3>Download</h3>
+                    <div>
+                        Latest release: 
+                        <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-V2/lilybukkit-api-1.1.1.jar">1.1.1</a>, 
+                        <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-V2/lilybukkit-api-1.1.1-sources.jar">Sources</a>, 
+                        <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/tag/1.0.16.05_13-V2">Changelog</a>
+                    </div>
+                    <details onclick="document.getElementById('lbapi').className = 'anim'" style="cursor:pointer">
+                        <summary>Older versions</summary>
+                        <ul id="lbapi">
+                            <li>
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-V1/lilybukkit-api-1.1.0.jar">1.1.0</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-V1/lilybukkit-api-1.1.0-sources.jar">Sources</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/tag/1.0.16.05_13-V1">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R10/lilybukkit-api-1.0.9.jar">1.0.9</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R10/lilybukkit-api-1.0.9-sources.jar">Sources</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/tag/1.0.16.05_13-R10">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R9/lilybukkit-api-1.0.8.jar">1.0.8</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R9/lilybukkit-api-1.0.8-sources.jar">Sources</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/tag/1.0.16.05_13-R9">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R8/lilybukkit-api-1.0.7.jar">1.0.7</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R8/lilybukkit-api-1.0.7-sources.jar">Sources</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/tag/1.0.16.05_13-R8">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R7/lilybukkit-api-1.0.6.jar">1.0.6</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R7/lilybukkit-api-1.0.6-sources.jar">Sources</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/tag/1.0.16.05_13-R7">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R6/lilybukkit-api-1.0.5.jar">1.0.5</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R6/lilybukkit-api-1.0.5-sources.jar">Sources</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/tag/1.0.16.05_13-R6">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R5/lilybukkit-api-1.0.4.jar">1.0.4</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R5/lilybukkit-api-1.0.4-sources.jar">Sources</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/tag/1.0.16.05_13-R5">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R4/lilybukkit-api-1.0.3.jar">1.0.3</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R4/lilybukkit-api-1.0.3-sources.jar">Sources</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/tag/1.0.16.05_13-R4">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R3/lilybukkit-api-1.0.2.jar">1.0.2</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R3/lilybukkit-api-1.0.2-sources.jar">Sources</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/tag/1.0.16.05_13-R3">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R2/lilybukkit-api-1.0.1.jar">1.0.1</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R2/lilybukkit-api-1.0.1-sources.jar">Sources</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/tag/1.0.16.05_13-R2">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R8/lilybukkit-api-1.0.0.jar">1.0.0</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/download/1.0.16.05_13-R8/lilybukkit-api-1.0.0-sources.jar">Sources</a>, 
+                                <a href="https://github.com/LilyBukkit/LilyBukkit-API/releases/tag/1.0.16.05_13-R1">Changelog</a>
+                            </li>
+                        </ul>
+                    </details>
+                    <h3>Installing</h3>
+                    <i>X.X.X</i> stands for the release you're using.
+                    <div>
+                        <h4>Maven</h4>
+                        Add the following code to your <code>pom.xml</code>:<br>
+                        <pre>
+&lt;dependency&gt;
+    &lt;groupId&gt;ru.vladthemountain&lt;/groupId&gt;
+    &lt;artifactId&gt;lilybukkit&lt;/artifactId&gt;
+    &lt;version&gt;X.X.X&lt;/version&gt;
+    &lt;scope&gt;system&lt;/scope&gt;
+    &lt;systemPath&gt;${project.basedir}/relative/path/to/lilybukkit-X.X.X.jar&lt;/systemPath&gt;
+&lt;/dependency&gt;
+                        </pre>
+                        <h4>Gradle</h4>
+                        Add the following code to your <code>build.gradle</code>:
+                        <pre>
+dependencies {
+    implementation files('/relative/path/to/lilybukkit-X.X.X.jar')
+}
+                        </pre>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
