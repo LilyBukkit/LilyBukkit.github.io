@@ -112,7 +112,7 @@ nav#topbar>a:hover {
     font-size: medium;
 }
 
-.plugin-box>a {
+.plugin-box a {
     color: rgb(179, 107, 0);
 }
 
