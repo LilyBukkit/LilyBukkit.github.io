@@ -34,7 +34,7 @@ div#container{
     padding: 0;
 }
 
-#header h1 a{
+#header>h1>a{
     background: transparent;
     color: whitesmoke;
     display: block;
